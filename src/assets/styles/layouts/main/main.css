@@ -1,0 +1,31 @@
+.caloriapp{
+    background-color:#e51b23;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.header{
+    height: 15%;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #ED0101, #FF5733);
+}
+
+.logo{
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#menu_on{
+    display: inline-block;
+    width:30px;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
