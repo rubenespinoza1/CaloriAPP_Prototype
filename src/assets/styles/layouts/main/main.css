@@ -47,11 +47,11 @@
 
 #sidebar{
     position: fixed;
-    width:30%;
+    width:20%;
     height:100%;
     background-color: #df545c;
     left:-30%;
-    transition: all 0.75s ease;
+    transition: all 0.5s ease;
 }
 
 #sidebar li{
@@ -63,6 +63,7 @@
     list-style:none;
     margin-left:-10%;
     cursor:pointer;
+    font-family: "Lucida Console", "Monaco", monospace;
 }
 
 #sidebar.active{
