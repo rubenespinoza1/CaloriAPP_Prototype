@@ -13,6 +13,7 @@ export default {
   methods: {
     openMenu() {
       document.getElementById('sidebar').classList.toggle('active');
+      console.log(process.env.apiAlimentos);
     }
   }
 }
