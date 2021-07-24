@@ -69,3 +69,10 @@
 #sidebar.active{
     left:0;
 }
+
+.welcome-page {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
