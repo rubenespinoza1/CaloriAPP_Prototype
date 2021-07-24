@@ -1,6 +1,14 @@
 <template>
   <div class="welcome-page">
-      <h1>Welcome to our page</h1>
+      
+      <div class="welcome-message big">
+          <h1>Bienvenido a CaloriAPP</h1>
+      </div>
+      <div class="welcome-message small">
+          <p>
+              La aplicacion que te permitira controlar tu peso rapidamente
+          </p>
+      </div>
   </div>
 </template>
 
