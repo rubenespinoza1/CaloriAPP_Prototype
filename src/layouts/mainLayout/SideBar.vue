@@ -1,7 +1,7 @@
 <template>
   <div id="sidebar">
     <ul>
-      <li>Perfil Nutricional</li>
+      <li><router-link>Perfil Nutricional</router-link></li>
       <li @click="test()">Ingresar Alimentos</li>
       <li>Vista gráfica</li>
     </ul>
