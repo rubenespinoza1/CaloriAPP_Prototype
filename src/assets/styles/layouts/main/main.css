@@ -69,3 +69,25 @@
 #sidebar.active{
     left:0;
 }
+
+.welcome-page {
+    padding: 2px;
+    background-color: lightcoral;
+}
+
+.welcome-message{
+    padding: 2px;
+    text-align: center;
+}
+
+.small{
+    font-size: 25px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 50;
+
+}
+
+.big{
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+}

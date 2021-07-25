@@ -2,6 +2,7 @@
   <div class="caloriapp">
     <HeaderComponent />
     <SideBar />
+    <WelcomePage />
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 import '../../assets/styles/layouts/main/main.css'
 import HeaderComponent from "@/layouts/mainLayout/HeaderComponent";
 import SideBar from "@/layouts/mainLayout/SideBar";
+import WelcomePage from "@/layouts/mainLayout/WelcomePage";
 export default {
 name: "MainLayout",
-  components: {SideBar, HeaderComponent}
+  components: {SideBar, HeaderComponent, WelcomePage}
 }
 </script>
 
