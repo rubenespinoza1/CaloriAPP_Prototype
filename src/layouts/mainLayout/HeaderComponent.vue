@@ -1,7 +1,9 @@
 <template>
   <div class="mainBar">
     <BurgerMenu />
-    <img class="logo" src="../../assets/images/logo1.png">
+    <router-link to="/">
+      <img class="logo" src="../../assets/images/logo1.png">
+    </router-link>
   </div>
 </template>
 
