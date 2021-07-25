@@ -2,18 +2,18 @@
   <div class="caloriapp">
     <HeaderComponent />
     <SideBar />
-    <WelcomePage />
+<!--    <WelcomePage />-->
   </div>
 </template>
 
 <script>
-import '../../assets/styles/layouts/main/main.css'
+import '../assets/styles/layouts/main/main.css'
 import HeaderComponent from "@/layouts/mainLayout/HeaderComponent";
-import SideBar from "@/layouts/mainLayout/SideBar";
-import WelcomePage from "@/layouts/mainLayout/WelcomePage";
+import SideBar from "@/layouts/SideBar";
+// import WelcomePage from "@/layouts/mainLayout/WelcomePage";
 export default {
 name: "MainLayout",
-  components: {SideBar, HeaderComponent, WelcomePage}
+  components: {SideBar, HeaderComponent}
 }
 </script>
 
