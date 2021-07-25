@@ -1,9 +1,10 @@
 <template>
   <div class="caloriapp">
+    <router-view></router-view>
     <HeaderComponent />
     <SideBar />
     <WelcomePage />
-    <router-view></router-view>
+    
   </div>
 </template>
 

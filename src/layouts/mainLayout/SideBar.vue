@@ -1,7 +1,7 @@
 <template>
   <div id="sidebar">
     <ul>
-      <li>Perfil Nutricional</li>
+      <li><router-link to="/profile" class="rl">Perfil Nutricional</router-link></li>
       <li>Ingresar Alimentos</li>
       <li>Vista gráfica</li>
     </ul>
