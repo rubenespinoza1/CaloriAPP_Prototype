@@ -1,16 +1,19 @@
 <template>
   <div id="sidebar">
     <ul>
-      <li><router-link>Perfil Nutricional</router-link></li>
-      <li @click="test()">Ingresar Alimentos</li>
+      <li><router-link to="/profile">Perfil Nutricional</router-link></li>
+      <li><router-link to="/">Ingresar Alimentos</router-link></li>
       <li>Vista gráfica</li>
     </ul>
   </div>
 </template>
 
 <script>
-import '../../assets/styles/layouts/main/main.css'
+import '../assets/styles/layouts/main/main.css'
 import axios from 'axios'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter);
 export default {
   name: "SideBar",
   data() {
@@ -19,6 +22,9 @@ export default {
     }
   },
   methods: {
+    swapPage(){
+
+    },
     async test(){
       let url = 'http://localhost:9000/api/alimentos';
       let alimentosJSON=await axios.get(url);
