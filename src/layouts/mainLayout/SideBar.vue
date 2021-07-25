@@ -1,15 +1,15 @@
 <template>
   <div id="sidebar">
     <ul>
-      <li><router-link to="/profile">Perfil Nutricional</router-link></li>
-      <li><router-link to="/">Ingresar Alimentos</router-link></li>
+      <li>Perfil Nutricional</li>
+      <li>Ingresar Alimentos</li>
       <li>Vista gráfica</li>
     </ul>
   </div>
 </template>
 
 <script>
-import '../assets/styles/layouts/main/main.css'
+import '../../assets/styles/layouts/main/main.css'
 import axios from 'axios'
 import Vue from 'vue'
 import VueRouter from 'vue-router'

@@ -1,5 +1,5 @@
 <template>
-  <button class="menuBtn" @click="openMenu($event)">
+  <button class="menuBtn" @click="openMenu()">
     <div class="menuBarras"></div>
     <div class="menuBarras"></div>
     <div class="menuBarras"></div>
@@ -12,8 +12,8 @@ export default {
   name: "BurgerMenu",
   methods: {
     openMenu() {
-      document.getElementById('sidebar').classList.toggle('active');
-      console.log(process.env.apiAlimentos);
+      let test = document.getElementById('sidebar').classList.toggle('active');
+      console.log(test);
     }
   }
 }

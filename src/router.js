@@ -7,21 +7,18 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "home" */'../src/layouts/MainLayout.vue'),
+    component: () => import(/* webpackChunkName: "home" */'./layouts/mainLayout/MainLayout.vue'),
   },
   {
     path: '/profile',
     name: 'profile',
     component: () => import(/* webpackChunkName: "profile" */'../src/layouts/nutritionalProfileLayout/NutritionalProfileLayout.vue'),
-  },
-  {
-    
   }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: 'http://localhost:8080/',
+  base: process.env.BASE_URL,
   routes
 })
 

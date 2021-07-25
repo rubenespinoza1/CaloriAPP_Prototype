@@ -1,12 +1,12 @@
 
 <template>
-  <div id="app">
+  <div>
     <MainLayout />
   </div>
 </template>
 
 <script>
-import MainLayout from './layouts/MainLayout.vue'
+import MainLayout from './layouts/mainLayout/MainLayout.vue'
 export default {
   name: 'App',
   components: {
