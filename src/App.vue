@@ -1,26 +1,27 @@
+
 <template>
-  <v-app>
-     
-    
-    <v-main>
-      <MainLayout/>
-    </v-main>
-  </v-app>
+  <div>
+    <MainLayout />
+  </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld';
-import MainLayout from '@/layouts/mainLayout/MainLayout';
-
+import MainLayout from './layouts/mainLayout/MainLayout.vue'
 export default {
   name: 'App',
-
   components: {
-    MainLayout,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+    MainLayout
+  }
+}
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
