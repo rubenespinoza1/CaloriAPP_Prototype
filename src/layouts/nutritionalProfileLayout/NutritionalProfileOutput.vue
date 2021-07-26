@@ -135,6 +135,7 @@ export default {
       const caloriasDiarias = document.getElementById('calorias').innerHTML;
       
       ApiService.createDailyCalories(caloriasDiarias, 1);
+      ApiService.updateCaloriesOfUser(1, caloriasDiarias * -1);
     }
   }
 }
