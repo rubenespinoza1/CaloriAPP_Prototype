@@ -3,7 +3,7 @@
     <ul>
       <li><router-link to="/profile" class="rl">Perfil Nutricional</router-link></li>
       <li>Ingresar Alimentos</li>
-      <li>Vista gráfica</li>
+      <li><router-link to="/grafica-historica" class="rl">Vista gráfica</router-link></li>
     </ul>
   </div>
 </template>

@@ -34,6 +34,11 @@ const routes = [
         component: () => import(/* webpackChunkName: 'ingresar-alimento' */'./layouts/mainLayout/IngresarAlimento.vue')
     },
     {
+        path: '/grafica-historica',
+        name: 'grafica-historica',
+        component: () => import(/* webpackChunkName: 'grafica-historica' */'./layouts/historyGraph/HistoryGraphLayout.vue')
+    },
+    {
         path: '*',
         name: 'not-found',
         redirect: '/'

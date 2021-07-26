@@ -1,5 +1,5 @@
 <template>
-  <div class="caloriapp">
+  <div>
     <NutritionalProfileOutput />
 
     <router-view></router-view>
