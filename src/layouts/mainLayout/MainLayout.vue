@@ -3,7 +3,7 @@
     <HeaderComponent />
     <SideBar />
     <WelcomePage />
-    <router-view></router-view>
+<!--    <router-view></router-view>-->
   </div>
 </template>
 

@@ -45,7 +45,7 @@
     border-radius:5px;
 }
 
-#sidebar{
+.caloriapp #sidebar{
     position: fixed;
     width:20%;
     height:100%;
@@ -67,7 +67,7 @@
 }
 
 #sidebar.active{
-    left:0;
+    left:0%;
 }
 
 .welcome-page {

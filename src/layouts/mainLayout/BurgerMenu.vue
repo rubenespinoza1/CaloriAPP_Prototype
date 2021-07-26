@@ -12,8 +12,7 @@ export default {
   name: "BurgerMenu",
   methods: {
     openMenu() {
-      let test = document.getElementById('sidebar').classList.toggle('active');
-      console.log(test);
+      document.getElementById('sidebar').classList.toggle('active');
     }
   }
 }

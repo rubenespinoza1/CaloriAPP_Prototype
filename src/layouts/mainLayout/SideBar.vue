@@ -2,7 +2,7 @@
   <div id="sidebar">
     <ul>
       <li>Perfil Nutricional</li>
-      <li>Ingresar Alimentos</li>
+      <li><router-link to="/">Ingresar Alimentos</router-link></li>
       <li>Vista gráfica</li>
     </ul>
   </div>
