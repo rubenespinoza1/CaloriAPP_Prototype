@@ -13,6 +13,11 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: () => import(/* webpackChunkName: "profile" */'../src/layouts/nutritionalProfileLayout/NutritionalProfileLayout.vue'),
+  },
+  {
+    path: '*',
+    name: 'not-found',
+    redirect: '/'
   }
 ]
 

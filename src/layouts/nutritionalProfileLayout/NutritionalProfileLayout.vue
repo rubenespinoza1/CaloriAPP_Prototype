@@ -2,7 +2,7 @@
   <div class="caloriapp">
     <HeaderComponent />
     <SideBar />
-    <h>Holitas</h>
+    <h1>Holitas</h1>
     <router-view></router-view>
   </div>
 </template>

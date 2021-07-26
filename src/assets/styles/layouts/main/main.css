@@ -91,3 +91,8 @@
     font-size: 30px;
     font-family: 'Brush Script MT', cursive;
 }
+
+.rl{
+    text-decoration: none;
+    color: inherit;
+}
