@@ -12,6 +12,10 @@ class ApiService {
         return this.resource.get('alimentos/');
     }
 
+    getAllCalorias() {
+        return this.resource.get('caloriasdiarias/')
+    }
+
     getUserById(id) {
         return this.resource.get('usuarios/' + id);
     }
