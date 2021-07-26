@@ -10,14 +10,14 @@
             hara el resto. De esta forma podras llevar registro de cuantas
             calorias has consumido
           </p>
-          <p class="spacer">
+          <!--<p class="spacer">
             <router-link to="/register">
               <a class="btn btn-primary my-2 spacer"> Quiero Empezar </a>
             </router-link>
             <router-link to="/login">
               <a class="btn btn-secondary my-2 spacer"> Ya tengo cuenta </a>
             </router-link>
-          </p>
+          </p>-->
         </div>
       </section>
       <hr />
