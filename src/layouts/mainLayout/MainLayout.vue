@@ -1,6 +1,5 @@
 <template>
   <div class="caloriapp">
-    
     <HeaderComponent />
     <SideBar />
     <WelcomePage />
