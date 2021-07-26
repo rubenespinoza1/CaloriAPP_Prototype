@@ -7,6 +7,10 @@
     left:0px;
 }
 
+v-card .panel-color{
+    background-color: #FF5733;
+}
+
 .mainBar{
     height: 15%;
     border-bottom: 10px solid;
@@ -21,6 +25,34 @@
     margin-right:auto;
     display:inline-block;
     transform: translateX(650%);
+}
+
+.img{
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #ED0101, #F1C330);
+}
+
+.profile{
+    height:20px;
+}
+
+.profileComp{
+    top:18%;
+}
+
+.profileHeader{
+    transform: translateX(40%);
+}
+
+.formHeader{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.submit{
+    width:90%;
+    transform: translate(2%,100%);
 }
 
 .menuBtn {
