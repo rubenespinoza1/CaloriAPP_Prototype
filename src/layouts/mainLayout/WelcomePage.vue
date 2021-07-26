@@ -2,7 +2,7 @@
   <div id="welcome-main-div">
     <router-view></router-view>
     <div id="bienvenida">
-      <section class="jumbotron text-center to-end-of-page">
+      <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Bienvenido(a) a CaloriAPP</h1>
           <p class="lead text-muted">
@@ -21,22 +21,30 @@
         </div>
       </section>
       <hr />
-      <section>
+      <section class="info-container">
         <div class="container">
           <h1 class="jumbotron-heading spacer">Que es CaloriAPP?</h1>
           <p class="lead text-muted spacer">
             CaloriAPP es una aplicacion web que te permite llevar un registro de
             cuantas calorias consumes segun que alimentos has consumido
           </p>
+        </div>
+        <div>
           <h1 class="jumbotron-heading spacer">Por que CaloriAPP?</h1>
           <p class="lead text-muted spacer">
-            Ya que es una de las aplicaciones mas cercanas al usuario, esto significa que no es necesario
-            un conocimiento extenso de salud para poder ocupar esta plataforma
+            Ya que es una de las aplicaciones mas cercanas al usuario, esto
+            significa que no es necesario un conocimiento extenso de salud para
+            poder ocupar esta plataforma
           </p>
-          <h1 class="jumbotron-heading spacer">Que beneficios supone ocupar CaloriAPP</h1>
+        </div>
+        <div>
+          <h1 class="jumbotron-heading spacer">
+            Que beneficios supone ocupar CaloriAPP
+          </h1>
           <p class="lead text-muted spacer">
-            Con CaloriAPP podras en pocos clicks monitorizar tu situacion nutricional, y sin tramites
-            extra, tan solo registrate en la pagina y registra los alimentos que consumiste.
+            Con CaloriAPP podras en pocos clicks monitorizar tu situacion
+            nutricional, y sin tramites extra, tan solo registrate en la pagina
+            y registra los alimentos que consumiste.
           </p>
         </div>
       </section>
@@ -62,8 +70,18 @@ export default {
   height: 430px;
 }
 
+.info-container {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+
+
 .spacer {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 </style>

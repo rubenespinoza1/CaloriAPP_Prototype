@@ -88,7 +88,7 @@
                 width="400"
                 src="https://www.independent.com/wp-content/uploads/2019/03/07/icons6_KMAv3Bp.png"
             ></v-img>
-            <b-button @click="test()" class="submit" variant="danger">
+            <b-button @click="guardarCaloriasRegistro()" class="submit" variant="danger">
               Guardar calorías
             </b-button>
           </v-col>
@@ -100,6 +100,7 @@
 
 <script>
 import "../../assets/styles/layouts/main/main.css";
+import ApiService from "../../assets/api/api";
 import axios from "axios";
 export default {
   name: "NutritionalProfileOutput",
@@ -130,8 +131,15 @@ export default {
     }
   },
   methods: {
-    async test(){
-      console.log(this.usuario);
+    guardarCaloriasRegistro(){
+
+      console.log('Se estan guardando las calorias')
+      const caloriasDiarias = document.getElementById('calorias').innerHTML;
+      
+      ApiService.createDailyCalories(caloriasDiarias, 1);
+      ApiService.updateCaloriesOfUser(1, caloriasDiarias * -1);
+
+      setTimeout(() => { this.$router.go();  }, 3000);
     }
   }
 }

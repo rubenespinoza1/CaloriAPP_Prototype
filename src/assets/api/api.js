@@ -27,6 +27,17 @@ class ApiService {
 
     }
 
+    createDailyCalories(caloriasRegistro, idUsuario){
+        const dailyCalories = {
+            calorias: caloriasRegistro,
+            idUsuario: idUsuario,
+        }
+
+        this.resource.post('caloriasdiarias/guardar/', dailyCalories);
+    }
+
+
+
 }
 
 export default new ApiService();
