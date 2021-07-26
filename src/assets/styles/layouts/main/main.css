@@ -50,6 +50,12 @@ v-card .panel-color{
     text-align: center;
 }
 
+
+.scrollable{
+    height:50%;
+    overflow-y: auto;
+}
+
 .submit{
     width:90%;
     transform: translate(2%,100%);

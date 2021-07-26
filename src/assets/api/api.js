@@ -1,13 +1,17 @@
 import axios from 'axios';
+const baseURL = 'http://localhost:9000/api/alimentos'
 
-export default {
-    getAlimentos() {
-        let config = {
-            headers: {
-                'Accept':'application/json'
-            }
-        };
-        const alimentos = axios.get('https://localhost:9000/api/alimentos/',config);
-        return alimentos.data;
+class FoodApi {
+    constructor() {
+        this.resource = axios.create({
+            baseURL,
+        });
     }
+
+    getAllAlimentos() {
+        return this.resource.get('/');
+    }
+
 }
+
+export default new FoodApi();
