@@ -1,68 +1,76 @@
 <template>
-  <div class="container">
+  <div id="login">
+    <section>
       <router-view></router-view>
-    <div class="row">
-        <div class="col-md-offset-5 col-md-3">
-            <div class="form-login">
-            <h4>Welcome back.</h4>
-            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
-            <br>
-            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
-            <br>
-            <div class="wrapper">
-            <span class="group-btn">     
-                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
-            </span>
+      <div class="container register-form">
+        <div class="form">
+          <div class="note">
+            <p>Ingrese sus credenciales de login</p>
+          </div>
+
+          <div class="form-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Contraseña"
+                    value=""
+                  />
+                </div>
+              </div>
             </div>
-            </div>
-        
+            <router-link to="/">
+                <button type="button" class="btnSubmit">Entrar</button>
+            </router-link>
+          </div>
         </div>
-    </div>
-    
-</div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "LoginUser",
+};
 </script>
 
 <style>
-@import url(http://fonts.googleapis.com/css?family=Roboto:400);
-body {
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto, arial, sans-serif;
-}
-
-.container {
-  padding: 25px;
-  position: fixed;
-}
-
-.form-login {
-  background-color: #ededed;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 15px;
-  border-color: #d2d2d2;
-  border-width: 5px;
-  box-shadow: 0 1px 0 #cfcfcf;
-}
-
-h4 {
-  border: 0 solid #fff;
-  border-bottom-width: 1px;
-  padding-bottom: 10px;
+.note {
   text-align: center;
+  height: 80px;
+  background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+  color: #fff;
+  font-weight: bold;
+  line-height: 80px;
 }
-
+.form-content {
+  padding: 5%;
+  border: 1px solid #ced4da;
+  margin-bottom: 2%;
+}
 .form-control {
-  border-radius: 10px;
+  border-radius: 1.5rem;
 }
-
-.wrapper {
-  text-align: center;
+.btnSubmit {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1%;
+  width: 20%;
+  cursor: pointer;
+  background: #0062cc;
+  color: #fff;
 }
 </style>

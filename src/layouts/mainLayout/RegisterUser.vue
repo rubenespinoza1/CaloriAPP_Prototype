@@ -46,7 +46,9 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btnSubmit">Registrarme</button>
+          <router-link to="/">
+            <button type="button" class="btnSubmit">Entrar</button>
+          </router-link>
         </div>
       </div>
     </div>
