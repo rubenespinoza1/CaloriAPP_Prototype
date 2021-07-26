@@ -16,7 +16,7 @@ const routes = [
     {
         path: '/profile',
         name: 'profile',
-        component: () => import(/* webpackChunkName: "profile" */'../src/layouts/nutritionalProfileLayout/NutritionalProfileLayout.vue'),
+        component: () => import(/* webpackChunkName: "profile" */'./layouts/nutritionalProfileLayout/NutritionalProfileLayout.vue'),
     },
     {
         path: '/register',
