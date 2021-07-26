@@ -12,6 +12,10 @@ class ApiService {
         return this.resource.get('alimentos/');
     }
 
+    getAllCalorias() {
+        return this.resource.get('caloriasdiarias/')
+    }
+
     getUserById(id) {
         return this.resource.get('usuarios/' + id);
     }
@@ -29,7 +33,6 @@ class ApiService {
 
     createDailyCalories(caloriasRegistro, idUsuario){
         const dailyCalories = {
-            id: 7,
             calorias: caloriasRegistro,
             idUsuario: idUsuario,
         }
