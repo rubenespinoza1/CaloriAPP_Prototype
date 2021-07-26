@@ -1,0 +1,98 @@
+.caloriapp{
+    background-color:#e51b23;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.mainBar{
+    height: 15%;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #ED0101, #FF5733);
+}
+
+.logo{
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    transform: translateX(650%);
+}
+
+.menuBtn {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding: 0;
+    transform: translate(100%);
+    background-color: transparent;
+    border: 0;
+    z-index:2;
+    position:relative;
+    cursor:pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menuBarras {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius:5px;
+}
+
+.caloriapp #sidebar{
+    position: fixed;
+    width:20%;
+    height:100%;
+    background-color: #df545c;
+    left:-30%;
+    transition: all 0.5s ease;
+}
+
+#sidebar li{
+    color:white;
+    font-size: 30px;
+    padding: 30px;
+    border-bottom: 1px solid gray;
+    text-align:center;
+    list-style:none;
+    margin-left:-10%;
+    cursor:pointer;
+    font-family: "Lucida Console", "Monaco", monospace;
+}
+
+#sidebar.active{
+    left:0%;
+}
+
+.welcome-page {
+    padding: 2px;
+    background-color: lightcoral;
+}
+
+.welcome-message{
+    padding: 2px;
+    text-align: center;
+}
+
+.small{
+    font-size: 25px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 50;
+
+}
+
+.big{
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.rl{
+    text-decoration: none;
+    color: inherit;
+}
