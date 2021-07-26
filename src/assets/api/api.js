@@ -1,7 +1,7 @@
 import axios from 'axios';
-const baseURL = 'http://localhost:9000/api/alimentos'
+const baseURL = 'http://localhost:9000/api/'
 
-class FoodApi {
+class ApiService {
     constructor() {
         this.resource = axios.create({
             baseURL,
@@ -9,9 +9,24 @@ class FoodApi {
     }
 
     getAllAlimentos() {
-        return this.resource.get('/');
+        return this.resource.get('alimentos/');
+    }
+
+    getUserById(id) {
+        return this.resource.get('usuarios/' + id);
+    }
+
+    updateCaloriesOfUser(id, plusCalories) {
+        const response = this.getUserById(id);
+
+        response.then(({ data }) => {
+            const user = data;
+            user.caloriasDia += plusCalories;
+            this.resource.put('usuarios/' + id, user);
+        })
+
     }
 
 }
 
-export default new FoodApi();
+export default new ApiService();
