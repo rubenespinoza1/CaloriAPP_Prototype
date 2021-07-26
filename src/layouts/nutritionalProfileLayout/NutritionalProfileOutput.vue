@@ -132,10 +132,14 @@ export default {
   },
   methods: {
     guardarCaloriasRegistro(){
+
+      console.log('Se estan guardando las calorias')
       const caloriasDiarias = document.getElementById('calorias').innerHTML;
       
       ApiService.createDailyCalories(caloriasDiarias, 1);
       ApiService.updateCaloriesOfUser(1, caloriasDiarias * -1);
+
+      setTimeout(() => { this.$router.go();  }, 3000);
     }
   }
 }

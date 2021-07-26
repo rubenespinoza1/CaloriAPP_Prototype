@@ -29,11 +29,12 @@ class ApiService {
 
     createDailyCalories(caloriasRegistro, idUsuario){
         const dailyCalories = {
+            id: 7,
             calorias: caloriasRegistro,
             idUsuario: idUsuario,
         }
 
-        this.resource.post('caloriasdiarias/', dailyCalories);
+        this.resource.post('caloriasdiarias/guardar/', dailyCalories);
     }
 
 
