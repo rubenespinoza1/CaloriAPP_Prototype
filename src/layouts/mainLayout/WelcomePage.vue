@@ -28,15 +28,15 @@
             CaloriAPP es una aplicacion web que te permite llevar un registro de
             cuantas calorias consumes segun que alimentos has consumido
           </p>
-          <h1 class="jumbotron-heading spacer">Que es CaloriAPP?</h1>
+          <h1 class="jumbotron-heading spacer">Por que CaloriAPP?</h1>
           <p class="lead text-muted spacer">
-            CaloriAPP es una aplicacion web que te permite llevar un registro de
-            cuantas calorias consumes segun que alimentos has consumido
+            Ya que es una de las aplicaciones mas cercanas al usuario, esto significa que no es necesario
+            un conocimiento extenso de salud para poder ocupar esta plataforma
           </p>
-          <h1 class="jumbotron-heading spacer">Que es CaloriAPP?</h1>
+          <h1 class="jumbotron-heading spacer">Que beneficios supone ocupar CaloriAPP</h1>
           <p class="lead text-muted spacer">
-            CaloriAPP es una aplicacion web que te permite llevar un registro de
-            cuantas calorias consumes segun que alimentos has consumido
+            Con CaloriAPP podras en pocos clicks monitorizar tu situacion nutricional, y sin tramites
+            extra, tan solo registrate en la pagina y registra los alimentos que consumiste.
           </p>
         </div>
       </section>
