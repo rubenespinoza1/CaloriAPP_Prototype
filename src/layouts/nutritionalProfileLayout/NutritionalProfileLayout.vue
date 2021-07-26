@@ -2,7 +2,7 @@
   <div class="caloriapp">
     <HeaderComponent />
     <SideBar />
-    <h1>Holitas</h1>
+    <NutritionalProfileOutput />
     <router-view></router-view>
   </div>
 </template>
@@ -10,9 +10,10 @@
 <script>
 import HeaderComponent from "@/layouts/mainLayout/HeaderComponent";
 import SideBar from "@/layouts/mainLayout/SideBar";
+import NutritionalProfileOutput from "@/layouts/nutritionalProfileLayout/NutritionalProfileOutput";
 export default {
 name: "nutritionalProfileLayout",
-  components: {SideBar, HeaderComponent}
+  components: {SideBar, HeaderComponent, NutritionalProfileOutput}
 }
 </script>
 
